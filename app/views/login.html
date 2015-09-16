@@ -9,16 +9,10 @@
         <form class="loginRegistrationForm">
           <h1 class="text-center">Login</h1>
           <div class="input">
-            <input type="email" class="form-control input-field">
-            <label class="input-label">
-              <span class="input-label-content">Email address</span>
-            </label>
+            <input type="email" ng-model="user.email" placeholder="Email address" class="form-control input-field">
           </div>
           <div class="input">
-            <input type="password" class="form-control input-field">
-            <label class="input-label">
-              <span class="input-label-content">Password</span>
-            </label>
+            <input type="password" ng-class="user.password" placeholder="Password" class="form-control input-field">
           </div>
           <br />
           <button type="submit" class="btn btn-lg btn-yellow btn-effect">Login</button>

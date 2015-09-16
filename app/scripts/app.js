@@ -13,7 +13,8 @@ angular
         'ngResource',
         'ngSanitize',
         'ngTouch',
-        'ui.router'
+        'ui.router',
+        'satellizer'
     ])
     .config(function ($stateProvider, $urlRouterProvider) {
         $stateProvider
@@ -25,6 +26,10 @@ angular
                 url: '/login',
                 controller: 'LoginCtrl',
                 templateUrl: 'views/login.html'
+            })
+            .state('bills', {
+                url: '/bills',
+                templateUrl: 'views/bills.html'
             });
 
         $urlRouterProvider.otherwise('/');

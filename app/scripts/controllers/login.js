@@ -10,4 +10,6 @@
 angular.module('myHealthApp')
   .controller('LoginCtrl', function ($scope) {
 
+      $scope.user = { email: '', password: '' };
+
   });
