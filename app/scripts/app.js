@@ -14,9 +14,16 @@ angular
         'ngSanitize',
         'ngTouch',
         'ui.router',
-        'satellizer'
+        'satellizer',
+        'ngToast'
     ])
-    .config(function ($stateProvider, $urlRouterProvider) {
+    .constant('urls', {
+        API: 'http://localhost:1337/api/v1'
+    })
+    .config(function ($stateProvider, $urlRouterProvider, $authProvider, urls) {
+        $authProvider.loginUrl = urls.API + '/user/login';
+        $authProvider.logoutRedirect = '/';
+
         $stateProvider
             .state('home', {
                 url: '/',
@@ -29,7 +36,14 @@ angular
             })
             .state('bills', {
                 url: '/bills',
-                templateUrl: 'views/bills.html'
+                templateUrl: 'views/bills.html',
+                resolve: {
+                    authenticated: ['$location', '$auth', function ($location, $auth) {
+                        if (!$auth.isAuthenticated()) {
+                            return $location.path('/login');
+                        }
+                    }]
+                }
             });
 
         $urlRouterProvider.otherwise('/');
