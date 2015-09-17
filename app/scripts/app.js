@@ -18,7 +18,7 @@ angular
         'ngToast'
     ])
     .constant('urls', {
-        API: 'http://localhost:1337/api/v1'
+        API: 'https://myhealth-hanze.herokuapp.com/api/v1'
     })
     .config(function ($stateProvider, $urlRouterProvider, $authProvider, urls) {
         $authProvider.loginUrl = urls.API + '/user/login';
