@@ -2061,7 +2061,7 @@ h3 {
 #header .navbar-nav>.sub>ul {
     left: -15px;
 }
-#header .navbar-nav .login {
+#header .navbar-nav .login .logout {
     margin-left: 55px;
 }
 #header .wrap.two-cols .text {
@@ -2180,4 +2180,7 @@ h3 {
 }
 .nav-pills {
     padding-top: 25px;
+}
+.logout {
+    cursor: pointer;
 }

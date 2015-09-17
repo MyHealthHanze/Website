@@ -7,10 +7,14 @@
  * # header
  */
 angular.module('myHealthApp')
-  .directive('dHeader', function () {
+  .directive('dHeader', function ($auth) {
     return {
       templateUrl: function() {
         return 'views/partials/header.html';
-      }
+      },
+      link: function (scope, element) {
+        scope.auth = $auth;
+      },
+      controller: 'HeaderCtrl'
     };
   });

@@ -18,7 +18,10 @@
                 <ul class="nav navbar-nav">
                     <li class="active sub">
                         <a ui-sref="home" title="Home">Home</a>
-                        <li class="login"><a ui-sref="login" title="Login"><i class="icon fa fa-lock"></i> Login</a></li>
+
+                        <li class="login" ng-if="!auth.isAuthenticated()"><a ui-sref="login" title="Login"><i class="icon fa fa-lock"></i> Login</a></li>
+
+                        <li class="logout" ng-if="auth.isAuthenticated()"><a ng-click="logout()" title="Logout"><i class="icon fa fa-sign-out"></i> Logout</a></li>
                     </li>
                 </ul>
             </nav>
