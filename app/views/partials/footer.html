@@ -3,7 +3,7 @@
   <div class="wrap">
     <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-sm-4 i">
+        <div class="col-xs-6 col-sm-3 i">
           <h2>MyHealth</h2>
           <div class="content">
             Zernikeplein 11<br />
@@ -13,8 +13,8 @@
             <a href="mailto:info@myhealth.com" title="#">info@myhealth.com</a>
           </div>
         </div>
-        <div class="col-xs-6 col-sm-4 i">
-          <h2>Follow us</h2>
+        <div class="col-xs-6 col-sm-3 i">
+          <h2>{{ 'FOOTER_FOLLOW_US' | translate }}</h2>
 
           <div class="socials">
             <a href="https://facebook.com" title="#" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -23,8 +23,14 @@
             <a href="https://linkedin.com" title="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
           </div>
         </div>
-        <div class="col-xs-6 col-sm-4 i">
-          <h2>Get the app</h2>
+        <div class="col-xs-6 col-sm-3 i">
+          <h2>{{ 'FOOTER_TRANSLATE' | translate }}</h2>
+
+          <button ng-click="changeLanguage('nl')" class="btn btn-yellow btn-effect">{{ 'FOOTER_DUTCH_LANGUAGE' | translate }}</button>
+          <button ng-click="changeLanguage('en')" class="btn btn-yellow btn-effect">{{ 'FOOTER_ENGLISH_LANGUAGE' | translate }}</button>
+        </div>
+        <div class="col-xs-6 col-sm-3 i">
+          <h2>{{ 'FOOTER_GET_APP' | translate }}</h2>
           <a href="https://play.google.com">
             <img src="img/en_generic_rgb_wo_45.png" />
           </a>

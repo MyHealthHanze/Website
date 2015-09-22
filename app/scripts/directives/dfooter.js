@@ -12,6 +12,6 @@ angular.module('myHealthApp')
       templateUrl: function() {
         return 'views/partials/footer.html';
       },
-      restrict: 'E'
+      controller: 'FooterCtrl'
     };
   });

@@ -13,12 +13,23 @@ angular
         'ngResource',
         'ngSanitize',
         'ngTouch',
+        'ngCookies',
         'ui.router',
         'satellizer',
-        'ngToast'
+        'ngToast',
+        'pascalprecht.translate'
     ])
     .constant('urls', {
         API: 'https://myhealth-hanze.herokuapp.com/api/v1'
+    })
+    .config(function ($translateProvider) {
+        $translateProvider
+            .fallbackLanguage('en')
+            .determinePreferredLanguage();
+
+        $translateProvider.useLocalStorage();
+
+        $translateProvider.useSanitizeValueStrategy('sanitize');
     })
     .config(function ($stateProvider, $urlRouterProvider, $authProvider, urls) {
         $authProvider.loginUrl = urls.API + '/user/login';

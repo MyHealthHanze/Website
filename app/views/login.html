@@ -1,7 +1,7 @@
 <div class="loginPage">
     <div class="container">
         <a ui-sref="home" title="#" class="back btn-effect">
-            <span class="sprite icon"></span> Back
+            <span class="sprite icon"></span> {{ 'LOGIN_BACK_BUTTON' | translate }}
         </a>
 
         <div class="row">
@@ -9,26 +9,26 @@
 
                 <form role="form" name="loginForm" ng-submit="loginUser(user)" class="loginRegistrationForm" novalidate>
                     <h1 class="text-center">
-                        <small>Login to</small>
+                        <small>{{ 'LOGIN_TITLE' | translate }}</small>
                         MyHealth
                     </h1>
 
                     <div class="input"
                          ng-class="{ 'has-error' : loginForm.email.$invalid && !loginForm.email.$pristine }">
-                        <input name="email" type="email" ng-model="user.email" placeholder="Email address" required
+                        <input name="email" type="email" ng-model="user.email" placeholder="{{ 'LOGIN_PLACEHOLDER_EMAIL' | translate }}" required
                                class="form-control input-field">
                     </div>
 
                     <div class="input"
                          ng-class="{ 'has-error' : loginForm.password.$invalid && !loginForm.password.$pristine }">
-                        <input name="password" type="password" ng-model="user.password" placeholder="Password"
+                        <input name="password" type="password" ng-model="user.password" placeholder="{{ 'LOGIN_PLACEHOLDER_PASSWORD' | translate }}"
                                ng-minlength="4" required class="form-control input-field">
                     </div>
 
                     <br/>
 
                     <button type="submit" class="btn btn-lg btn-yellow btn-effect" ng-disabled="loginForm.$invalid">
-                        Login
+                        {{ 'LOGIN_BUTTON' | translate }}
                     </button>
                 </form>
             </div>
