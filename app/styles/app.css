@@ -142,7 +142,7 @@ body a:hover, body a:active, body a:focus {
     color: #36373c;
 }
 .sprite {
-    background: url(../../img/sprite.png) no-repeat;
+    background: url(../img/sprite.png) no-repeat;
 }
 h1, h2, h3, h4, h5, h6 {
     color: #36373c;
@@ -661,7 +661,7 @@ h3 {
 .businessTheme {
     padding: 180px 0 140px 0;
     color: #fff;
-    background: url('../../img/bg_desk.jpg') center;
+    background: url(../img/bg_desk.jpg) center;
     background-size: cover;
     position: relative;
 }
@@ -1514,7 +1514,7 @@ h3 {
     height: 600px;
 }
 .loginPage {
-    background: url(../../img/bg_login.jpg) center center fixed;
+    background: url(../img/bg_login.jpg) center center fixed;
     color: #fff;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -1757,7 +1757,7 @@ h3 {
 }
 }@media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) {
     .sprite {
-    background-image: url('../../img/sprite@2x.png');
+    background-image: url(../img/sprite@2x.png);
     background-size: 870px 330px;
 }
 }@media (max-width:520px) {
