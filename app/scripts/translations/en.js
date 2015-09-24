@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('myHealthApp')
     .config(function ($translateProvider) {
         $translateProvider.translations('en', {
@@ -41,6 +43,9 @@ angular.module('myHealthApp')
             ACCOUNT_SETTINGS_OLD_PASSWORD_PLACEHOLDER: 'Type your old password',
             ACCOUNT_SETTINGS_NEW_PASSWORD_PLACEHOLDER: 'Type your new password',
             ACCOUNT_SETTINGS_CHANGE_PASSWORD_BUTTON: 'Change password',
-            ACCOUNT_SETTINGS_CHANGE_DISPLAY_LANGUAGE_TITLE: 'Change display language'
+            ACCOUNT_SETTINGS_CHANGE_DISPLAY_LANGUAGE_TITLE: 'Change display language',
+
+            CHANGE_PASSWORD_TITLE: 'Change your password',
+            CHANGE_PASSWORD_SUBTITLE: 'You should immediately change your password in order to ensure your accounts safety.'
         });
     });

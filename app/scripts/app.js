@@ -68,6 +68,18 @@ angular
                         }
                     }]
                 }
+            })
+            .state('change-password', {
+                url: '/change-password',
+                templateUrl: 'views/change-password.html',
+                controller: 'AccountSettingsCtrl',
+                resolve: {
+                    authenticated: ['$location', '$auth', function ($location, $auth) {
+                        if (!$auth.isAuthenticated()) {
+                            return $location.path('/login');
+                        }
+                    }]
+                }
             });
 
         $urlRouterProvider.otherwise('/');

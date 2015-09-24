@@ -11,7 +11,7 @@
 
             <p>{{ 'ACCOUNT_SETTINGS_SUBTITLE' | translate }}</p><br />
 
-                <form role="form" name="changePasswordForm" ng-submit="changePassword(password)" novalidate>
+                <form role="form" name="changePasswordForm" ng-submit="changePassword(password, false)" novalidate>
 
                     <h4>{{ 'ACCOUNT_SETTINGS_CHANGE_PASSWORD_TITLE' | translate}}</h4>
                     <div class="form-group" ng-class="{ 'has-error' : changePasswordForm.oldPassword.$invalid && !changePasswordForm.oldPassword.$pristine }">

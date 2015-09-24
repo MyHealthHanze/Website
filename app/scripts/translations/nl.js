@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('myHealthApp')
     .config(function ($translateProvider) {
         $translateProvider.translations('nl', {
@@ -41,6 +43,9 @@ angular.module('myHealthApp')
             ACCOUNT_SETTINGS_OLD_PASSWORD_PLACEHOLDER: 'Type uw oude wachtwoord',
             ACCOUNT_SETTINGS_NEW_PASSWORD_PLACEHOLDER: 'Type uw nieuwe wachtwoord',
             ACCOUNT_SETTINGS_CHANGE_PASSWORD_BUTTON: 'Verander wachtwoord',
-            ACCOUNT_SETTINGS_CHANGE_DISPLAY_LANGUAGE_TITLE: 'Verander weergavetaal'
+            ACCOUNT_SETTINGS_CHANGE_DISPLAY_LANGUAGE_TITLE: 'Verander weergavetaal',
+
+            CHANGE_PASSWORD_TITLE: 'Verander uw wachtwoord',
+            CHANGE_PASSWORD_SUBTITLE: 'U wordt verzocht om onmiddelijk uw wachtwoord te veranderen, om zo uw accounts veiligheid te garanderen.'
         });
     });

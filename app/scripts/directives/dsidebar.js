@@ -12,7 +12,7 @@ angular.module('myHealthApp')
             templateUrl: function () {
                 return 'views/partials/sidebar.html';
             },
-            link: function (scope, element) {
+            link: function (scope) {
                 scope.state = $state;
             },
             restrict: 'E'

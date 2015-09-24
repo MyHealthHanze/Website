@@ -12,7 +12,7 @@ angular.module('myHealthApp')
       templateUrl: function() {
         return 'views/partials/header.html';
       },
-      link: function (scope, element) {
+      link: function (scope) {
         scope.auth = $auth;
         scope.state = $state;
       },
