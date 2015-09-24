@@ -7,7 +7,6 @@ angular.module('myHealthApp')
             NAV_OVERVIEW: 'Overview',
 
             BREADCRUMB_BILLS: 'Bills',
-            BREADCRUMB_MEASUREMENTS: 'Measurements',
             BREADCRUMB_ACCOUNT_SETTINGS: 'Account settings',
 
             FOOTER_FOLLOW_US: 'Follow us',
