@@ -4,6 +4,7 @@ angular.module('myHealthApp')
             NAV_HOME: 'Home',
             NAV_LOGIN: 'Inloggen',
             NAV_LOGOUT: 'Uitloggen',
+            NAV_OVERVIEW: 'Overzicht',
 
             BREADCRUMB_BILLS: 'Rekeningen',
             BREADCRUMB_MEASUREMENTS: 'Meetgegevens',

@@ -16,12 +16,20 @@
 
             <nav class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active sub">
+                    <li class="sub" ng-class="{'active': state.current.name == 'home'}">
                         <a ui-sref="home" title="Home">{{ 'NAV_HOME' | translate }}</a>
+                    </li>
 
-                        <li class="login" ng-if="!auth.isAuthenticated()"><a ui-sref="login" title="Login"><i class="icon fa fa-lock"></i> {{ 'NAV_LOGIN' | translate }}</a></li>
+                    <li class="sub" ng-if="auth.isAuthenticated()" ng-class="{'active': state.current.name != 'home'}">
+                        <a ui-sref="bills" title="Overview">{{ 'NAV_OVERVIEW' | translate }}</a>
+                    </li>
 
-                        <li class="logout" ng-if="auth.isAuthenticated()"><a ng-click="logout()" title="Logout"><i class="icon fa fa-sign-out"></i> {{ 'NAV_LOGOUT' | translate }}</a></li>
+                    <li class="login" ng-if="!auth.isAuthenticated()">
+                        <a ui-sref="login" title="Login"><i class="icon fa fa-lock"></i> {{ 'NAV_LOGIN' | translate }}</a>
+                    </li>
+
+                    <li class="logout" ng-if="auth.isAuthenticated()">
+                        <a ng-click="logout()" title="Logout"><i class="icon fa fa-sign-out"></i> {{ 'NAV_LOGOUT' | translate }}</a>
                     </li>
                 </ul>
             </nav>
