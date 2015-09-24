@@ -20,8 +20,8 @@ angular
         'pascalprecht.translate'
     ])
     .constant('urls', {
-        API: 'http://localhost:1337/api/v1'
-        //API: 'https://myhealth-hanze.herokuapp.com/api/v1'
+        //API: 'http://localhost:1337/api/v1'
+        API: 'https://myhealth-hanze.herokuapp.com/api/v1'
     })
     .config(function ($translateProvider) {
         $translateProvider
