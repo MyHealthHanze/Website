@@ -8,10 +8,11 @@
  * Service in the myHealthApp.
  */
 angular.module('myHealthApp')
-  .service('UserData', function ($http, urls) {
+    .service('UserData', function ($http, urls) {
 
-      this.login = function (user) {
-        return $http.post(urls.API + '/user/login', user);
-      };
+        this.changePassword = function (passwords) {
+            console.log(passwords);
+            return $http.put(urls.API + '/user/password', passwords);
+        };
 
-  });
+    });

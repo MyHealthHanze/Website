@@ -11,17 +11,17 @@
 
             <p>{{ 'ACCOUNT_SETTINGS_SUBTITLE' | translate }}</p><br />
 
-                <form role="form" name="changePasswordForm" ng-submit="changePasswordForm(password)" novalidate>
+                <form role="form" name="changePasswordForm" ng-submit="changePassword(password)" novalidate>
 
                     <h4>{{ 'ACCOUNT_SETTINGS_CHANGE_PASSWORD_TITLE' | translate}}</h4>
                     <div class="form-group" ng-class="{ 'has-error' : changePasswordForm.oldPassword.$invalid && !changePasswordForm.oldPassword.$pristine }">
                         <label for="oldPassword">{{ 'ACCOUNT_SETTINGS_OLD_PASSWORD_TITLE' | translate}}</label>
-                        <input name="oldPassword" ng-model="password.oldPassword" type="password" class="form-control" id="oldPassword" placeholder="{{ 'ACCOUNT_SETTINGS_OLD_PASSWORD_PLACEHOLDER' | translate}}" ng-minlength="4" required>
+                        <input name="oldPassword" ng-model="password.old_password" type="password" class="form-control" id="oldPassword" placeholder="{{ 'ACCOUNT_SETTINGS_OLD_PASSWORD_PLACEHOLDER' | translate}}" ng-minlength="4" required>
                     </div>
 
                     <div class="form-group" ng-class="{ 'has-error' : changePasswordForm.newPassword.$invalid && !changePasswordForm.newPassword.$pristine }">
                         <label for="newPassword">{{ 'ACCOUNT_SETTINGS_NEW_PASSWORD_TITLE' | translate}}</label>
-                        <input name="newPassword" ng-model="password.newPassword" type="password" class="form-control" id="newPassword" placeholder="{{ 'ACCOUNT_SETTINGS_NEW_PASSWORD_PLACEHOLDER' | translate}}" ng-minlength="4" required>
+                        <input name="newPassword" ng-model="password.new_password" type="password" class="form-control" id="newPassword" placeholder="{{ 'ACCOUNT_SETTINGS_NEW_PASSWORD_PLACEHOLDER' | translate}}" ng-minlength="4" required>
                     </div>
 
                     <button type="submit" class="btn btn-yellow btn-effect" ng-disabled="changePasswordForm.$invalid">{{ 'ACCOUNT_SETTINGS_CHANGE_PASSWORD_BUTTON' | translate}}</button>

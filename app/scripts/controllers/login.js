@@ -24,7 +24,6 @@ angular.module('myHealthApp')
 
         $state.go('bills');
       }).catch(function (err) {
-        console.log(err);
         ngToast.create({
           className: 'danger',
           content: err.data.error
