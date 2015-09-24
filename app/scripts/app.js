@@ -55,6 +55,18 @@ angular
                         }
                     }]
                 }
+            })
+            .state('account-settings', {
+                url: '/account-settings',
+                templateUrl: 'views/account-settings.html',
+                controller: 'AccountSettingsCtrl',
+                resolve: {
+                    authenticated: ['$location', '$auth', function ($location, $auth) {
+                        if (!$auth.isAuthenticated()) {
+                            return $location.path('/login');
+                        }
+                    }]
+                }
             });
 
         $urlRouterProvider.otherwise('/');

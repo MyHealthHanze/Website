@@ -7,10 +7,13 @@
  * # dSidebar
  */
 angular.module('myHealthApp')
-    .directive('dSidebar', function () {
+    .directive('dSidebar', function ($state) {
         return {
             templateUrl: function () {
                 return 'views/partials/sidebar.html';
+            },
+            link: function (scope, element) {
+                scope.state = $state;
             },
             restrict: 'E'
         };

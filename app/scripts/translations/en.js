@@ -7,12 +7,11 @@ angular.module('myHealthApp')
 
             BREADCRUMB_BILLS: 'Bills',
             BREADCRUMB_MEASUREMENTS: 'Measurements',
+            BREADCRUMB_ACCOUNT_SETTINGS: 'Account settings',
 
             FOOTER_FOLLOW_US: 'Follow us',
             FOOTER_GET_APP: 'Get the app',
             FOOTER_TRANSLATE: 'Translate MyHealth',
-            FOOTER_DUTCH_LANGUAGE: 'Dutch',
-            FOOTER_ENGLISH_LANGUAGE: 'English',
 
             HOME_TITLE: ' takes care of all your medical worries',
             HOME_SUBTITLE: 'With MyHealth you get insights into your medical information, like personal records and bills.',
@@ -32,6 +31,16 @@ angular.module('myHealthApp')
             LOGIN_BACK_BUTTON: 'Back',
 
             BILLS_TITLE: 'Bills',
-            BILLS_EXAMPLE: 'The bills will be displayed here.'
+            BILLS_EXAMPLE: 'The bills will be displayed here.',
+
+            ACCOUNT_SETTINGS_TITLE: 'Account settings',
+            ACCOUNT_SETTINGS_SUBTITLE: 'Change your password and/or display language',
+            ACCOUNT_SETTINGS_CHANGE_PASSWORD_TITLE: 'Change password',
+            ACCOUNT_SETTINGS_OLD_PASSWORD_TITLE: 'Old password',
+            ACCOUNT_SETTINGS_NEW_PASSWORD_TITLE: 'New password',
+            ACCOUNT_SETTINGS_OLD_PASSWORD_PLACEHOLDER: 'Type your old password',
+            ACCOUNT_SETTINGS_NEW_PASSWORD_PLACEHOLDER: 'Type your new password',
+            ACCOUNT_SETTINGS_CHANGE_PASSWORD_BUTTON: 'Change password',
+            ACCOUNT_SETTINGS_CHANGE_DISPLAY_LANGUAGE_TITLE: 'Change display language'
         });
     });

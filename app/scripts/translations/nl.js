@@ -7,12 +7,11 @@ angular.module('myHealthApp')
 
             BREADCRUMB_BILLS: 'Rekeningen',
             BREADCRUMB_MEASUREMENTS: 'Meetgegevens',
+            BREADCRUMB_ACCOUNT_SETTINGS: 'Accountinstellingen',
 
             FOOTER_FOLLOW_US: 'Volg ons',
             FOOTER_GET_APP: 'Download de app',
             FOOTER_TRANSLATE: 'Vertaal MyHealth',
-            FOOTER_DUTCH_LANGUAGE: 'Nederlands',
-            FOOTER_ENGLISH_LANGUAGE: 'Engels',
 
             HOME_TITLE: ' ontneemt al uw zorgkwesties',
             HOME_SUBTITLE: 'Met MyHealth krijgt u inzicht in al uw medische informatie, zoals persoonlijke informatie en rekeningen.',
@@ -32,6 +31,16 @@ angular.module('myHealthApp')
             LOGIN_BACK_BUTTON: 'Terug',
 
             BILLS_TITLE: 'Rekeningen',
-            BILLS_EXAMPLE: 'De rekeningen worden hier weergegeven.'
+            BILLS_EXAMPLE: 'De rekeningen worden hier weergegeven.',
+
+            ACCOUNT_SETTINGS_TITLE: 'Accountinstellingen',
+            ACCOUNT_SETTINGS_SUBTITLE: 'Verander uw wachtwoord en/of weergavetaal',
+            ACCOUNT_SETTINGS_CHANGE_PASSWORD_TITLE: 'Verander wachtwoord',
+            ACCOUNT_SETTINGS_OLD_PASSWORD_TITLE: 'Oud wachtwoord',
+            ACCOUNT_SETTINGS_NEW_PASSWORD_TITLE: 'Nieuw wachtwoord',
+            ACCOUNT_SETTINGS_OLD_PASSWORD_PLACEHOLDER: 'Type uw oude wachtwoord',
+            ACCOUNT_SETTINGS_NEW_PASSWORD_PLACEHOLDER: 'Type uw nieuwe wachtwoord',
+            ACCOUNT_SETTINGS_CHANGE_PASSWORD_BUTTON: 'Verander wachtwoord',
+            ACCOUNT_SETTINGS_CHANGE_DISPLAY_LANGUAGE_TITLE: 'Verander weergavetaal'
         });
     });

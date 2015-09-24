@@ -1,11 +1,15 @@
 <div class="col-md-3">
     <ul class="nav nav-pills nav-stacked">
-        <li role="presentation" class="active pills">
+        <li role="presentation" class="pills" ng-class="{'active': state.current.name == 'bills'}">
             <a ui-sref="bills">{{ 'BREADCRUMB_BILLS' | translate }}</a>
         </li>
 
-        <li role="presentation" class="pills">
+        <li role="presentation" class="pills" ng-class="{'active': state.current.name == 'measurements'}">
             <a ui-sref="measurements">{{ 'BREADCRUMB_MEASUREMENTS' | translate }}</a>
+        </li>
+
+        <li role="presentation" class="pills" ng-class="{'active': state.current.name == 'account-settings'}">
+            <a ui-sref="account-settings">{{ 'BREADCRUMB_ACCOUNT_SETTINGS' | translate }}</a>
         </li>
     </ul>
 </div>
