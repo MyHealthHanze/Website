@@ -16,20 +16,13 @@ angular.module('myHealthApp')
             BillsData
                 .getBills()
                 .success(function (response) {
-                    $scope.bills = response;
-
-                    console.log(response)
+                    $scope.bills = response.result;
                 })
                 .error(function (error) {
                     ngToast.create({
                         className: 'danger',
-                        content: error
+                        content: error.error
                     });
                 });
         });
-        
-        $scope.showOrders = function (bill) {
-            
-        }
-
     });
