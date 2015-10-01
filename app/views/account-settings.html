@@ -9,8 +9,6 @@
 
             <hr />
 
-            <p>{{ 'ACCOUNT_SETTINGS_SUBTITLE' | translate }}</p><br />
-
                 <form role="form" name="changePasswordForm" ng-submit="changePassword(password, false)" novalidate>
 
                     <h4>{{ 'ACCOUNT_SETTINGS_CHANGE_PASSWORD_TITLE' | translate}}</h4>
@@ -35,13 +33,13 @@
                 <div class="form-group">
                     <div class="radio">
                         <label>
-                            <input type="radio" ng-model="selectedLanguage" value="en" name="optionsRadios" id="optionsRadios1" ng-click="selectLanguage('en')">
+                            <input type="radio" ng-model="selectedLanguage" value="en" name="optionsRadios" id="optionsRadios1" ng-click="changeLanguage('en')">
                             English (Engels)
                         </label>
                     </div>
                     <div class="radio">
                         <label>
-                            <input type="radio" ng-model="selectedLanguage" value="nl" name="optionsRadios" id="optionsRadios2" ng-click="selectLanguage('nl')">
+                            <input type="radio" ng-model="selectedLanguage" value="nl" name="optionsRadios" id="optionsRadios2" ng-click="changeLanguage('nl')">
                             Dutch (Nederlands)
                         </label>
                     </div>

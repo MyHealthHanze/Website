@@ -7,9 +7,40 @@
         <div class="col-md-9">
             <h1>{{ 'BILLS_TITLE' | translate }}</h1>
 
-            <hr />
+            <hr/>
 
-            <p>{{ 'BILLS_EXAMPLE' | translate }}</p>
+            <table class="table table-striped table-bordered table-hover">
+                <div style="width:300px; margin-left:auto; margin-right:0; text-align: right">
+                    <input ng-model="q" id="search" class="form-control" placeholder="{{ 'BILLS_SEARCH' | translate }}">
+                </div>
+
+                <br />
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>{{ 'BILLS_DESCRIPTION' | translate }}</th>
+                        <th>Status</th>
+                        <th>{{ 'BILLS_DATE' | translate }}</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr dir-paginate="bill in bills | filter:q | itemsPerPage: 10">
+                        <td>{{ bill.id }}</td>
+                        <td>
+                            <div ng-repeat="order in bill.orders">
+                                <i class="pull-right" style="margin-right: 10px">{{ order.price | currency }}</i>
+                                <b>{{ order.code }}</b>: {{ order.description }}
+                            </div>
+                        </td>
+                        <td>{{ bill.billState }}</td>
+                        <td>{{ bill.createdAt | date }}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <dir-pagination-controls></dir-pagination-controls>
         </div>
     </div>
 </div>

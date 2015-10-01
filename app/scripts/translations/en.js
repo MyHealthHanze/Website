@@ -33,10 +33,11 @@ angular.module('myHealthApp')
             LOGIN_BACK_BUTTON: 'Back',
 
             BILLS_TITLE: 'Bills',
-            BILLS_EXAMPLE: 'The bills will be displayed here.',
+            BILLS_SEARCH: 'Search for..',
+            BILLS_DESCRIPTION: 'Description',
+            BILLS_DATE: 'Date',
 
             ACCOUNT_SETTINGS_TITLE: 'Account settings',
-            ACCOUNT_SETTINGS_SUBTITLE: 'Change your password and/or display language',
             ACCOUNT_SETTINGS_CHANGE_PASSWORD_TITLE: 'Change password',
             ACCOUNT_SETTINGS_OLD_PASSWORD_TITLE: 'Old password',
             ACCOUNT_SETTINGS_NEW_PASSWORD_TITLE: 'New password',

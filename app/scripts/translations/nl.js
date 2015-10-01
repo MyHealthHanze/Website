@@ -33,10 +33,11 @@ angular.module('myHealthApp')
             LOGIN_BACK_BUTTON: 'Terug',
 
             BILLS_TITLE: 'Rekeningen',
-            BILLS_EXAMPLE: 'De rekeningen worden hier weergegeven.',
+            BILLS_SEARCH: 'Zoeken op..',
+            BILLS_DESCRIPTION: 'Beschrijving',
+            BILLS_DATE: 'Datum',
 
             ACCOUNT_SETTINGS_TITLE: 'Accountinstellingen',
-            ACCOUNT_SETTINGS_SUBTITLE: 'Verander uw wachtwoord en/of weergavetaal',
             ACCOUNT_SETTINGS_CHANGE_PASSWORD_TITLE: 'Verander wachtwoord',
             ACCOUNT_SETTINGS_OLD_PASSWORD_TITLE: 'Oud wachtwoord',
             ACCOUNT_SETTINGS_NEW_PASSWORD_TITLE: 'Nieuw wachtwoord',

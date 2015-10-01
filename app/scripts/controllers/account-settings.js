@@ -37,7 +37,7 @@ angular.module('myHealthApp')
                 });
         };
 
-        $scope.selectLanguage = function (language) {
+        $scope.changeLanguage = function (language) {
             $translate.use(language);
             $scope.selectedLanguage = language;
         };

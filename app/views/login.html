@@ -16,7 +16,7 @@
                     <div class="input"
                          ng-class="{ 'has-error' : loginForm.email.$invalid && !loginForm.email.$pristine }">
                         <input name="email" type="email" ng-model="user.email" placeholder="{{ 'LOGIN_PLACEHOLDER_EMAIL' | translate }}" required
-                               class="form-control input-field">
+                               class="form-control input-field" autofocus>
                     </div>
 
                     <div class="input"

@@ -17,7 +17,8 @@ angular
         'ui.router',
         'satellizer',
         'ngToast',
-        'pascalprecht.translate'
+        'pascalprecht.translate',
+        'angularUtils.directives.dirPagination'
     ])
     .constant('urls', {
         //API: 'http://localhost:1337/api/v1'
@@ -48,6 +49,7 @@ angular
             })
             .state('bills', {
                 url: '/bills',
+                controller: 'BillsCtrl',
                 templateUrl: 'views/bills.html',
                 resolve: {
                     authenticated: ['$location', '$auth', function ($location, $auth) {
